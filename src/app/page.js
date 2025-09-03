@@ -38,6 +38,17 @@ const homeSlides = [
   },
 ];
 
+const Bannerslides = [
+  {
+    black: 'Let’s Build Your',
+    pink: "Next-Gen Mobile App!",
+    discription: "Get in touch with us today to discuss your project",
+    button: "Contact us today!!",
+    CustomClass: "mobile",
+    link:'about',
+  },
+]; 
+
 export default function HomePage() {
   return (
     <>
@@ -66,7 +77,7 @@ export default function HomePage() {
   <ImageGridSlider />
   <Specialization />
   <Products />
-  <BannerCTA />
+  <BannerCTA slides={Bannerslides} bgimg="/images/Girl.svg" />
   <WhyChooseUs />
   <CaseStudiesSlider />
   <TestimonialsSlider />

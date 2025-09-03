@@ -145,16 +145,16 @@ export default function ContentManagementSystemsPage() {
         <CmsTab />
 
         {/* ---------------- Customers Benefit Section ---------------- */}
-        <section className="px-[50px] mt-[35px] md:mt-[95px]">
+        <section className="px-[50px]">
           {/* Heading */}
-          <h2 className="text-[30px] md:text-[50px] !font-[400] !text-[#3A3A3A] text-center">
+          <h2 className="text-[30px] md:text-[50px] !font-[400] !text-[#3A3A3A] text-center mb-2">
             How Customers{" "}
             <span className="!font-[400] text-[#C32C7B]">
               Benefit from a CMS
             </span>
           </h2>
           <div className="flex justify-center">
-            <div className="h-[2px] w-28 bg-[#C32C7B] rounded-full my-2 mb-[37px] md:mb-[67px]" />
+            <div className="h-[2px] w-28 bg-[#C32C7B] rounded-full my-2" />
           </div>
 
           {/* Cards Grid */}
@@ -171,7 +171,7 @@ export default function ContentManagementSystemsPage() {
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-15 h-15 mb-[35px]"
+                    className="w-10 h-10 mb-2"
                   />
                   <h3 style={{ fontFamily: 'var(--font-paragraph)' }} className="!font-[600] !text-[20px] !text-[#3A3A3A] leading-snug">
                     {card.title}
