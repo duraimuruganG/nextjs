@@ -37,8 +37,12 @@ export default function Footer() {
           <h4 className="font-bold text-base mt-6 mb-2 text-[#fff] tracking-wide" style={{ fontFamily: 'Futura T OT' }}>Imp links</h4>
           <div className="h-0.5 w-16 mb-2" style={{ background: 'var(--color-title)' }} />
           <ul className="space-y-1 text-sm">
+
+            <li><a href="/privacy" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Terms & Conditions</a></li>
             <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Privacy Policy</a></li>
             <li><a href="/terms-and-condition" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Terms & Conditions</a></li>
+
             <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Career</a></li>
           </ul>
         </div>

@@ -28,10 +28,11 @@
   --blackackground: #262626;
 
   --color-title: #C32C7B;
-  --color-paragraph: #3A3A3A;
+  --color-paragraph: #3A3A3AB2;
   --color-button-bg: #C32C7B;
   --color-button-text: #ffffff;
   --color-black-paragraph: #3A3A3AB2;
+  --color-black-dark-paragraph: #3A3A3A;
 }
 
 /* Hide both vertical & horizontal scrollbars inside timeline */
@@ -93,3 +94,27 @@ button {
   border-radius: 0.375rem;
   cursor: pointer;
 }
+
+
+
+  
+
+.group:hover h4,
+.group:hover p{
+  color: white!important;
+}
+ 
+.group:hover .white-icon-hover {
+  filter: invert(1) sepia(1) saturate(0) brightness(10);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .last div:last-child {
+    position: relative;
+    left: 52%;
+  }
+}
+ 
+
+ 
+ 

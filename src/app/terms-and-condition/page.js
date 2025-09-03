@@ -3,7 +3,7 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Image from "next/image";
-import Banner from "@/components/terms/Banner";
+import Hero from "@/components/common/Hero";
 
 
 
@@ -16,11 +16,11 @@ const homeSlides = [
   },
 ];
 
-export default function   () {
+export default function  termscondition() {
   return (    
     <>
   <Header />
- <Banner slides={homeSlides} bgimg="/images/terms-banner.png" /> 
+ <Hero slides={homeSlides} bgimg="/images/terms-banner.png" /> 
 
     
     <main className="min-h-screen items-center justify-center bg-white p-6">

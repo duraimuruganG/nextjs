@@ -11,11 +11,16 @@ import Mission from "@/components/about/Mission";
 import Achievements from "@/components/about/Achievements";
 import Vision from "@/components/about/Vision";
 import TestimonialsSlider from "@/components/home/TestimonialsSlider";
+import {IMAGE_BASE_PATH} from "@/lib/constants";
 
 const homeSlides = [
   {
     title: "Welcome to Fronseye",
-    brand: "Where Innovation Meets Insight",
+     brand:  (
+     <h1 className="text-[2.5rem] md:text-[3.5rem] font-regular mb-4"
+        style={{ color: "var(--color-title)", fontFamily: "Sarcolenta, serif" , lineHeight: '1.1'}}
+      >Where <span style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>Innovation</span> Meets Insight</h1>
+  ),
     description: `At Fronseye, we believe in analyzing deeply and acting decisively. Our journey is rooted in the art of  observation identifying gaps, optimizing processes, and crafting solutions that redefine business potential`,
     button: "Contact us today!!",
   },
@@ -25,7 +30,14 @@ export default function about() {
   return (
     <>
   <Header />
-  <Hero slides={homeSlides} bgimg="/images/about/about.jpg" />
+  <Hero slides={homeSlides} bgimg={`${IMAGE_BASE_PATH}/about/about.jpg}`} style={{
+      cursor: "grab",
+      backgroundImage: `url(${IMAGE_BASE_PATH}/about/about.jpg)`,
+      backgroundPosition: "center center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+    }} />
+
   <AboutSection/>
   <Story/>
   <Mission/>

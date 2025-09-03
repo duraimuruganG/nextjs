@@ -17,7 +17,7 @@ export default function ContactInformation() {
             fontFamily: "Sarcolenta, serif",
           }}
         >
-          Let's{" "}
+          Let&apos;s{" "}
           <span style={{ color: "var(--color-paragraph)" }}>Connect</span>
         </h2>
         <p
@@ -43,7 +43,7 @@ export default function ContactInformation() {
                 Contact information
             </h3>
             <span className="text-[#fff] mb-6">
-                "LET’S CONNECT – WE’RE HERE FOR YOU"
+                &quot;LET&lsquo;S CONNECT – WE&lsquo;RE HERE FOR YOU&quot;
             </span>
             <div className="space-y-4 mt-4">
               <div className="flex items-center gap-3 text-white">
