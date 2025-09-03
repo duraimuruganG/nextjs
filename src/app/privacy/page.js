@@ -2,7 +2,7 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Image from 'next/image';
-import Banner from "@/components/terms/Banner";
+//import Banner from "@/components/terms/Banner";
  
 const homeSlides = [
   {
@@ -17,7 +17,7 @@ export default function privacy() {
   return (
     <>
        <Header />
-        <Banner slides={homeSlides} bgimg="/images/Privacy-policy.svg"/>
+        {/* <Banner slides={homeSlides} bgimg="/images/Privacy-policy.svg"/> */}
         <div className="px-[20px] pt-[20px] pb-[40px] sm:pt-[30px] sm:mb-[100px] md:pt-[30px] md:pb-[80px] lg:pt-[30px] lg:pb-[100px] lg:mb-[48px] md:mb-[24px] text-gray-800 space-y-10">
 
            <div className="px-2 md:px-5 lg:px-15 py-10 md:py-16 lg:py-20 text-gray-800 space-y-10 border-[0.8px] border-solid border-[#C32C7B] rounded-[12px] bg-[#FFFBFD]">
