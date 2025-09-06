@@ -43,6 +43,24 @@
   --color-black-dark-paragraph: #3A3A3A;
 }
 
+
+.color-pink {
+  color: var(--color-title);
+}
+
+.color-bg-pink {
+  color: var(--color-button-bg);
+}
+
+
+.dark-black {
+  color: var(--color-black-dark-paragraph);
+}
+
+.black {
+  color: var(--color-black-paragraph);
+}
+
 /* Hide both vertical & horizontal scrollbars inside timeline */
 .scrollbar-hide::-webkit-scrollbar {
   width: 0;
