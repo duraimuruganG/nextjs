@@ -4,8 +4,19 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#232228] text-[#fff] border-t border-[#444] pt-10 pb-2 px-2 md:px-8 font-[FuturaTOT-Boo,Arial,sans-serif]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x divide-[#444]">
+    <footer
+      className="w-full relative bg-[#232228] text-[#fff] border-t border-[#444] pt-10 pb-2 px-2 md:px-8 font-[FuturaTOT-Boo,Arial,sans-serif] overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/footer.png')", // Update to your background image path
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Black overlay */}
+      <div className="absolute inset-0 pointer-events-none z-0" />
+
+      {/* MAIN FOOTER CONTENT */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x divide-[#444] relative z-10">
         
         {/* Logo & About */}
         <div className="flex-1 min-w-[220px] flex flex-col items-center md:items-start pr-10 mb-8 md:mb-0">
@@ -37,12 +48,8 @@ export default function Footer() {
           <h4 className="font-bold text-base mt-6 mb-2 text-[#fff] tracking-wide" style={{ fontFamily: 'Futura T OT' }}>Imp links</h4>
           <div className="h-0.5 w-16 mb-2" style={{ background: 'var(--color-title)' }} />
           <ul className="space-y-1 text-sm">
-
             <li><a href="/privacy" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Privacy Policy</a></li>
             <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Privacy Policy</a></li>
-            <li><a href="/terms-and-condition" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Terms & Conditions</a></li>
-
             <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Career</a></li>
           </ul>
         </div>
@@ -69,7 +76,7 @@ export default function Footer() {
       </div>
 
       {/* Social & Copyright */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-8 pt-4 border-t border-[#444] gap-4 pl-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-8 pt-4 border-t border-[#444] gap-4 pl-4 relative z-10">
         <div className="text-xs text-[#fff] opacity-60">Copyright © 2025. All rights reserved.</div>
         <div className="flex gap-3">
           <a href="#" className="bg-[#35343a] rounded-full p-2 hover:bg-[var(--color-title)] transition-colors"><Icon name="Facebook" size={18} color="#fff" /></a>

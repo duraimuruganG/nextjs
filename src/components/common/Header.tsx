@@ -12,11 +12,11 @@ export default function Header() {
       { label: 'ClientOps', icon: 'User', href: '#' },
     ],
     SERVICES: [
-      { label: 'Content Management Systems', icon: 'FileText', href: '#' },
-      { label: 'Custom Software Development', icon: 'Code2', href: '#' },
+      { label: 'Content Management Systems', icon: 'FileText', href: '/services/content-management-systems' },
+      { label: 'Custom Software Development', icon: 'Code2', href: '/services/custom-software-development' },
       { label: 'E-commerce platform Development', icon: 'ShoppingBag', href: '#' },
       { label: 'Enterprise Application Development', icon: 'Building2', href: '#' },
-      { label: 'Mobile App development', icon: 'Smartphone', href: '#' },
+      { label: 'Mobile App development', icon: 'Smartphone', href: 'services/custom-software-development' },
       { label: 'Software Testing Services', icon: 'CheckCircle2', href: '#' },
     ],
     SOLUTIONS: [
@@ -216,7 +216,7 @@ export default function Header() {
         {/* Logo left */}
         <div className="min-w-0 flex items-center">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img src="images/fronseye_logo.png" alt="Fronseye Logo" className="h-12" />
+            <img src={`${IMAGE_BASE_PATH}/Fronseye_logo.png`} alt="Fronseye Logo" className="h-12" />
           </Link>
         </div>
         {/* Hamburger right */}

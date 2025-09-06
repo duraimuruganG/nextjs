@@ -2,22 +2,43 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Image from 'next/image';
-//import Banner from "@/components/terms/Banner";
+import Hero from "@/components/common/Hero";
+import {IMAGE_BASE_PATH} from "@/lib/constants";
  
 const homeSlides = [
   {
-    black: "Protecting Your Privacy,",
-    pink: "Securing Your Trust",
-    description: `At Fronseye, we prioritize your data security and transparency. Explore our commitment to safeguarding your personal information while ensuring a seamless online experience`,
+     brand:  (
+     <h1 className="text-[2.5rem] md:text-[3.5rem] font-regular mb-4"
+        style={{ color: "var(--color-title)", fontFamily: "Sarcolenta, serif" , lineHeight: '1.1'}}
+      >Protecting Your Privacy,<span style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}> Securing Your Trust</span></h1>
+  ),
+    description:'Seamlessly create, manage, and optimize content with scalable and user-friendly solutions',
     button: "Contact us today!!",
-    customClass:"privacy",
   },
 ];
+
 export default function privacy() {
   return (
     <>
        <Header />
-        {/* <Banner slides={homeSlides} bgimg="/images/Privacy-policy.svg"/> */}
+
+       <Hero slides={homeSlides} bgimg={`${IMAGE_BASE_PATH}/Privacy-policy.svg`} style={{
+             cursor: "grab",
+             backgroundImage: `url(${IMAGE_BASE_PATH}/Privacy-policy.svg)`,
+             backgroundPosition: "center right",
+             backgroundRepeat: "no-repeat",
+             backgroundSize: "contain",
+           }}
+           mobileStyle={{
+             cursor: "grab",
+             backgroundImage: `url(${IMAGE_BASE_PATH}/Privacy-policy.svg)`,
+             backgroundPosition: "center center",
+             backgroundRepeat: "no-repeat",
+             backgroundSize: "cover",
+           }}
+           />
+
+
         <div className="px-[20px] pt-[20px] pb-[40px] sm:pt-[30px] sm:mb-[100px] md:pt-[30px] md:pb-[80px] lg:pt-[30px] lg:pb-[100px] lg:mb-[48px] md:mb-[24px] text-gray-800 space-y-10">
 
            <div className="px-2 md:px-5 lg:px-15 py-10 md:py-16 lg:py-20 text-gray-800 space-y-10 border-[0.8px] border-solid border-[#C32C7B] rounded-[12px] bg-[#FFFBFD]">

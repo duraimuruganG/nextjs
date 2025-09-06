@@ -4,25 +4,69 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Image from "next/image";
 import Hero from "@/components/common/Hero";
-
+import {IMAGE_BASE_PATH} from "@/lib/constants";
+import WhyChoose from "@/components/services/moblileapplication/Whychoose";
 
 
 const homeSlides = [
   {
-    black: "Terms & Conditions - Know Your",
-    pink: "Rights & Responsibilities",
-    description: `Stay informed about your rights and obligations while using our services. Read our updated Terms & Conditions to ensure a secure and seamless experience. For any questions, reach out to us anytime`,
+    title: "Welcome to Fronseye",
+     brand:  (
+     <h1 className="text-[2.5rem] md:text-[3.5rem] font-regular mb-4"
+        style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" , lineHeight: '1.1'}}
+      >Terms & Conditions – Know Your <span style={{ color: "var(--color-title)", fontFamily: "Sarcolenta, serif" }}>Rights & Responsibilities</span></h1>
+  ),
+    description:'Stay informed about your rights and obligations while using our services. Read our updated Terms & Conditions to ensure a secure and seamless experience. For any questions, reach out to us anytime',
     button: "Contact us today!!",
   },
 ];
+
+
+
+      const cardData = [
+        {
+          id: 1,
+          title: "Governing Law",
+          desc: "The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws",
+        },
+        {
+          id: 2,
+          title: "Disputes Resolution",
+          desc: "If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company",
+        },
+        {
+          id: 3,
+          title: "For European Union (EU) Users ",
+          desc: "If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in",
+        },
+        {
+          id: 4,
+          title: "United States Legal Compliance ",
+          desc: "You confirm that (i) you are not in a country subject to a U.S. government embargo or designated as a \"terrorist-supporting\" country, & (ii) you are not on any U.S. government list of restricted or prohibited parties",
+        },
+      ];
 
 export default function  termscondition() {
   return (    
     <>
   <Header />
- <Hero slides={homeSlides} bgimg="/images/terms-banner.png" /> 
-
+<Hero slides={homeSlides} bgimg={`${IMAGE_BASE_PATH}/terms-banner.png`} style={{
+      cursor: "grab",
+      backgroundImage: `url(${IMAGE_BASE_PATH}/terms-banner.png)`,
+      backgroundPosition: "center right",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "contain",
+    }}
+    mobileStyle={{
+      cursor: "grab",
+      backgroundImage: `url(${IMAGE_BASE_PATH}/terms-banner.png)`,
+      backgroundPosition: "center center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+          }}
     
+    />
+
     <main className="min-h-screen items-center justify-center bg-white p-6">
        
       <div className="px-2 md:px-5 lg:px-15 py-10 md:py-16 lg:py-20 text-gray-800 space-y-10 border-[0.8px] border-solid border-[#C32C7B] rounded-[12px] bg-[#FFFBFD] mb-20">
@@ -137,49 +181,7 @@ export default function  termscondition() {
                 </section>
             </div>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-12 mb-10 mt-10">
- 
-        <div className="bg-[#FAF5F8] border-t-[2px] border-l-[2px] border-r-0 border-b-[10px] border-[#C32C7B] rounded-[12px] px-[15px] py-[20px] text-center text-sm text-gray-700 h-[270px]">
-          <h3 style={{ fontFamily: 'inter' }} className="text-[20px] leading-none font-semibold text-pink-600 mb-2">
-            Governing Law
-          </h3>
-          <p style={{ fontFamily: 'inter' }} className="!text-[#3A3A3AB2] font-[400] text-[16px] mt-4">
-            The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service.
-            Your use of the Application may also be subject to other local, state, national, or international laws.
-          </p>
-        </div>
-      
-      
-        <div className="bg-[#FAF5F8] border-t-[2px] border-l-[2px] border-r-0 border-b-[10px] border-[#C32C7B] rounded-[12px] px-[15px] py-[20px] text-center text-sm text-gray-700 h-[270px]">
-          <h3 style={{ fontFamily: 'inter' }} className="text-[20px] leading-none font-semibold text-pink-600 mb-2">
-            Disputes Resolution
-          </h3>
-          <p style={{ fontFamily: 'inter' }} className="!text-[#3A3A3AB2] font-[400] text-[16px] mt-4">
-            If you have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
-          </p>
-        </div>
-      
-      
-        <div className="bg-[#FAF5F8] border-t-[2px] border-l-[2px] border-r-0 border-b-[10px] border-[#C32C7B] rounded-[12px] px-[15px] py-[20px] text-center text-sm text-gray-700 h-[270px]">
-          <h3 style={{ fontFamily: 'inter' }} className="text-[20px] leading-none font-semibold text-pink-600 mb-2">
-            For European Union (EU) Users
-          </h3>
-          <p style={{ fontFamily: 'inter' }} className="!text-[#3A3A3AB2] font-[400] text-[16px] mt-4">
-            If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
-          </p>
-        </div>
-      
-      
-        <div className="bg-[#FAF5F8] border-t-[2px] border-l-[2px] border-r-0 border-b-[10px] border-[#C32C7B] rounded-[12px] px-[15px] py-[20px] text-center text-sm text-gray-700 h-[270px]">
-          <h3 style={{ fontFamily: 'inter' }} className="text-[20px] leading-none font-semibold text-pink-600 mb-2">
-            United States Legal Compliance
-          </h3>
-          <p style={{ fontFamily: 'inter' }} className="!text-[#3A3A3AB2] font-[400] text-[16px] mt-4">
-            You confirm that (i) you are not in a country subject to a U.S. government embargo or designated as a “terrorist-supporting” country,
-            (ii) you are not on any U.S. government list of restricted or prohibited parties.
-          </p>
-        </div>
-      </section>
+       <WhyChoose cardData = {cardData}/>
 
       <div className="px-2 md:px-5 lg:px-15 py-10 md:py-16 lg:py-20 text-gray-800 space-y-10 border-[0.8px] border-solid border-[#C32C7B] rounded-[12px] bg-[#FFFBFD]">
 

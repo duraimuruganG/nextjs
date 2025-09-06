@@ -17,6 +17,14 @@
   font-display: swap;
 }
 
+.futuratot {
+  font-family: 'Futura T OT', sans-serif;
+}
+
+.sarcolenta {
+  font-family: 'Sarcolenta';
+}
+
 /* CSS Variables */
 :root {
   --font-title: 'Sarcolenta', cursive;
@@ -44,6 +52,20 @@
   -ms-overflow-style: none;   /* IE/Edge */
   scrollbar-width: none;      /* Firefox */
 }
+
+@keyframes smoothPulse {
+  0%, 100% {
+    background-color: #ECEEF0; /* gray */
+  }
+  50% {
+    background-color: #C32C7B; /* pink */
+  }
+}
+
+.smooth-pulse {
+  animation: smoothPulse 3s ease-in-out infinite; /* slow & smooth */
+}
+
 
 
 .intro-underline {
@@ -96,17 +118,32 @@ button {
 }
 
 
+span.arrow_line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #000;
+}
+
 
   
 
 .group:hover h4,
-.group:hover p{
+.group:hover p,
+.group:hover h3{
   color: white!important;
 }
  
 .group:hover .white-icon-hover {
   filter: invert(1) sepia(1) saturate(0) brightness(10);
 }
+ 
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .last div:last-child {
@@ -114,7 +151,5 @@ button {
     left: 52%;
   }
 }
- 
-
  
  

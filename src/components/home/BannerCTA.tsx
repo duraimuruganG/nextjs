@@ -44,7 +44,7 @@ export default function BannerCTA({ slides, bgimg }: BannerCta) {
 
         </div>
         <div className="flex-1 flex-col text-left py-6">
-          <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-regular mb-1 uppercase" 
+          <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-[45px] font-regular mb-1 uppercase" 
           style={{ lineHeight:'1.2', color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>
            {black} <span style={{ color: "var(--color-title)" }}>{pink}</span>
           </h3>
