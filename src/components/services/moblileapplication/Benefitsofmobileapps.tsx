@@ -55,6 +55,11 @@ export default function BenefitsOrbit() {
 
           {/* Trails + Orbiting Circles */}
           {orbitItems.map((item, idx) => {
+            // Fix: Ensure position property is typed correctly for CSSProperties
+            const trailStyle = {
+              ...item.trail_style,
+              position: "absolute" as const,
+            };
 
             return (
 
@@ -72,7 +77,7 @@ export default function BenefitsOrbit() {
                   width={170}
                   height={170}
                   className=""
-                  style={item.trail_style}
+                  style={trailStyle}
                 />
 
                 {/* Orbiting Circle */}
