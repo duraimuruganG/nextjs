@@ -20,6 +20,15 @@ export default function ClientsMap() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
+    <>
+    <div className="w-full py-8 bg-white flex flex-col items-center px-4">
+       <h2 className="text-2xl md:text-3xl font-regular mb-4 text-left dark-black" 
+        style={{ fontFamily: "Sarcolenta, serif" }}>
+          Our clients <span style={{ color: "var(--color-title)" }}>across continents </span> 
+        </h2>
+      <hr className="intro-underline"></hr>
+    </div>  
+
     <div className="relative w-full max-w-6xl mx-auto">
       {/* Background Map */}
       <img
@@ -52,5 +61,6 @@ export default function ClientsMap() {
         </div>
       ))}
     </div>
+    </>
   );
 }

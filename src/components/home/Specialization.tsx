@@ -14,8 +14,8 @@ export default function Specialization() {
         {/* Left Side: Text and Button */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start">
           <h2
-            className="text-2xl md:text-3xl font-regular mb-4 text-center md:text-left"
-            style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>
+            className="text-2xl md:text-3xl font-regular mb-4 text-center md:text-left dark-black"
+            style={{ fontFamily: "Sarcolenta, serif" }}>
             What <span style={{ color: "var(--color-title)" }}>we</span> specialize in?
           </h2>
           <p 

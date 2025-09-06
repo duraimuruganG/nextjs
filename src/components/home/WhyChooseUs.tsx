@@ -25,8 +25,8 @@ export default function WhyChooseUs() {
 
       <div className="col-span-12 md:col-span-4">
 
-        <h2 className="text-2xl md:text-3xl font-regular mb-4 text-left" 
-        style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>
+        <h2 className="text-2xl md:text-3xl font-regular mb-4 text-left dark-black" 
+        style={{  fontFamily: "Sarcolenta, serif" }}>
           Why choose <span style={{ color: "var(--color-title)" }}>us ?</span> 
         </h2>
         <hr className="intro-underline"></hr>

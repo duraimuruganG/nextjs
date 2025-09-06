@@ -54,8 +54,8 @@ export default function CardSlider() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
 
-      <h2 className="text-2xl md:text-3xl font-regular mb-4 text-left" 
-        style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>
+      <h2 className="text-2xl md:text-3xl font-regular mb-4 text-left dark-black" 
+        style={{ fontFamily: "Sarcolenta, serif" }}>
           Client Success <span style={{ color: "var(--color-title)" }}>stories </span> 
         </h2>
       <hr className="intro-underline"></hr>
@@ -102,7 +102,7 @@ export default function CardSlider() {
 
                  <Quote className="w-6 h-6  float-right" style={{ color: "var(--color-title)",fill: "currentColor" }} />
               </div>
-              <div className="text-white text-center py-2 rounded-bl-xl rounded-br-xl" style={{ backgroundColor: "var(--color-paragraph)" }}>
+              <div className="text-white text-center py-2 rounded-bl-xl rounded-br-xl" style={{ backgroundColor: "var(--color-black-dark-paragraph)" }}>
                 {card.footer}
               </div>
             </motion.div>

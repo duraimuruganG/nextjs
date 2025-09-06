@@ -4,9 +4,8 @@ export default function IntroSection() {
   return (
     <section className="w-full py-12 bg-white flex flex-col items-center text-center px-4 md:px-10">
       <h2
-        className="text-2xl md:text-3xl font-regular mb-4"
+        className="text-2xl md:text-3xl font-regular mb-4 dark-black"
         style={{
-          color: "var(--color-paragraph)",
           fontFamily: "Sarcolenta, serif",
         }}
       >
