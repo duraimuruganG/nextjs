@@ -1,6 +1,6 @@
+ 
 import {IMAGE_BASE_PATH} from "@/lib/constants";
-import Image from "next/image"; // Added import
-
+ 
 export default function SoftwareAbout() {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
@@ -15,12 +15,10 @@ export default function SoftwareAbout() {
             {/* Mobile only (below md) */}
             <div className="block md:hidden flex flex-col items-center justify-center gap-12">
                 <div className="w-full max-w-sm sm:max-w-md">
-                    <Image
-                      src={`${IMAGE_BASE_PATH}/software/SoftwareAbout.png`}
-                      alt="Tailored Solutions"
-                      width={600}
-                      height={400}
-                      className="w-full h-auto"
+                    <img
+                    src={`${IMAGE_BASE_PATH}/software/SoftwareAbout.png`}
+                    alt="Tailored Solutions"
+                    className="w-full h-auto"
                     />
                 </div>
 
@@ -67,11 +65,9 @@ export default function SoftwareAbout() {
                     </div>
 
                     <div className="w-full md:w-1/2 max-w-md">
-                    <Image
+                    <img
                         src={`${IMAGE_BASE_PATH}/software/SoftwareAbout.png`}
                         alt="Tailored Solutions"
-                        width={600}
-                        height={400}
                         className="w-full h-auto"
                     />
                     </div>
@@ -101,12 +97,10 @@ export default function SoftwareAbout() {
             {/* Desktop only (lg and above) */}
             <div className="hidden lg:flex flex-row items-center justify-center gap-16">
                 <div className="w-full lg:w-1/2 max-w-lg">
-                    <Image
-                      src={`${IMAGE_BASE_PATH}/software/SoftwareAbout.png`}
-                      alt="Tailored Solutions"
-                      width={600}
-                      height={400}
-                      className="w-full h-auto"
+                    <img
+                    src={`${IMAGE_BASE_PATH}/software/SoftwareAbout.png`}
+                    alt="Tailored Solutions"
+                    className="w-full h-auto"
                     />
                 </div>
 
@@ -142,3 +136,5 @@ export default function SoftwareAbout() {
     </div>
   )
 }
+
+   

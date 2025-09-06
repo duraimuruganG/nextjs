@@ -13,14 +13,13 @@ const homeSlides = [
 {
   title: "",
   brand: (
-     <h1 className="text-[30px] md:text-[50px] lg:text-[50px] uppercase font-regular leading-[0] mb-[15px]"
-                style={{ color: "var(--color-title)", fontFamily: "Sarcolenta, serif",lineHeight: "60px" }}>
-    <span style={{ color: "var(--color-paragraph)" }}>
-      Custom Software Development{" "} <br/>
-      <span style={{ color: "var(--color-title)" }}>
+     <h1 className="text-[30px] md:text-[50px] lg:text-[50px] uppercase font-regular leading-[0] mb-[15px] color-pink"
+                style={{ fontFamily: "Sarcolenta, serif",lineHeight: "60px" }}>
+      Custom Software Development{" "}
+      <span className="dark-black">
         Tailored Solutions for Your Business
       </span>
-    </span> </h1>
+    </h1>
   ),
   description:
     (<span className="block  w-full lg:w-[60%]">Seamlessly create, manage, and optimize content with scalable and user-friendly solutions</span>),

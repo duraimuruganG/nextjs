@@ -19,7 +19,7 @@ const homeSlides = [
      brand:  (
      <h1 className="text-[2.5rem] md:text-[3.5rem] font-regular mb-4"
         style={{ color: "var(--color-title)", fontFamily: "Sarcolenta, serif" , lineHeight: '1.1'}}
-      >Where <span style={{ color: "var(--color-paragraph)", fontFamily: "Sarcolenta, serif" }}>Innovation</span> Meets Insight</h1>
+      >Where <span className="dark-black" style={{ fontFamily: "Sarcolenta, serif" }}>Innovation</span> Meets Insight</h1>
   ),
     description: `At Fronseye, we believe in analyzing deeply and acting decisively. Our journey is rooted in the art of  observation identifying gaps, optimizing processes, and crafting solutions that redefine business potential`,
     button: "Contact us today!!",

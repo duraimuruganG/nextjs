@@ -85,7 +85,7 @@ export default function Hero({ slides, mobileStyle, style, contentwidth }: HeroP
           </div>
         {/* Text content */}
                     <div className="relative z-10 ml-[24px] mr-[24px] mt-[34px] mb-[30px]">
-                      <span className="text-lg md:text-xl mb-2 font-light uppercase">{slides[current].title}</span>
+                      <span className="text-lg md:text-xl mb-2 font-light uppercase dark-black">{slides[current].title}</span>
                         {slides[current].brand}
                       <p className="text-gray-500 text-base md:text-lg mb-6 leading-relaxed">
                         {slides[current].description}
@@ -126,9 +126,9 @@ export default function Hero({ slides, mobileStyle, style, contentwidth }: HeroP
 
               {/* Text content */}
               <div className="relative z-10 md:ml-[48px]">
-                <span className="text-lg md:text-xl mb-2 font-light">{slides[current].title}</span>
+                <span className="text-lg md:text-xl mb-2 font-light dark-black">{slides[current].title}</span>
                   {slides[current].brand}
-                <p className="text-gray-500 text-base md:text-lg mb-6 leading-relaxed">
+                <p className="black text-base md:text-lg mb-6 leading-relaxed">
                   {slides[current].description}
                 </p>
                 <button className="bg-[#C13B7B] hover:bg-[#a82e6a] text-white text-lg px-8 py-3 rounded-md font-medium transition-colors duration-200 w-fit shadow-md">
