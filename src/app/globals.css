@@ -52,7 +52,9 @@
   color: var(--color-button-bg);
 }
 
-
+.color-p {
+  color: var(--color-paragraph);
+}
 .dark-black {
   color: var(--color-black-dark-paragraph);
 }
@@ -135,6 +137,16 @@ button {
   cursor: pointer;
 }
 
+/* Font Class*/
+.futuratot {
+  font-family: 'Futura T OT', sans-serif;
+}
+ 
+.sarcolenta {
+  font-family: 'Sarcolenta';
+}
+ 
+
 
 span.arrow_line::after {
     content: "";
@@ -150,11 +162,12 @@ span.arrow_line::after {
 }
 
 
-  
 
 .group:hover h4,
 .group:hover p,
-.group:hover h3{
+.group:hover h3,
+.group:hover span
+{
   color: white!important;
 }
  
@@ -170,4 +183,72 @@ span.arrow_line::after {
   }
 }
  
- 
+ .smooth-shape {
+  clip-path: path('M267.996 123.31V567H0V123.31C0 112.338 4.72809 101.847 13.0758 94.2915L105.053 11.0147C121.272 -3.67158 146.724 -3.67158 162.947 11.0147L254.924 94.2915C263.272 101.844 268 112.338 268 123.31H267.996Z');
+}
+
+@layer utilities {
+  @media (min-width: 1440px) {
+    .pc-1440 {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+/* .smooth-shape {
+  clip-path: path('M267.996 123.31V567H0V123.31C0 112.338 4.72809 101.847 13.0758 94.2915L105.053 11.0147C121.272 -3.67158 146.724 -3.67158 162.947 11.0147L254.924 94.2915C263.272 101.844 268 112.338 268 123.31H267.996Z');
+} */
+
+.smooth-shape {
+  clip-path: path('M267.996 123.31V567H0V123.31C0 112.338 4.72809 101.847 13.0758 94.2915L105.053 11.0147C121.272 -3.67158 146.724 -3.67158 162.947 11.0147L254.924 94.2915C263.272 101.844 268 112.338 268 123.31H267.996Z');
+}
+
+ .swiper-slide-next .slide-div , .swiper-slide-prev .slide-div{
+  opacity: 0.5;
+  height: 500px;
+  margin-top: 30px;
+}
+.swiper-slide-active .slide-div {
+  width:80%;
+  margin:0 auto;
+}
+
+.swiper-pagination .dot-3{
+  display:none;
+}
+
+.swiper-pagination{
+
+  bottom:-5%!important;
+
+}
+.swiper {
+  overflow: visible !important;
+}
+ .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(195, 44, 123, 0.5);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.dot-center {
+  transform: scale(1.5);
+  background-color: #C32C7B;
+}
+
+.dot-side {
+  transform: scale(1);
+}
+
+.A-key{
+  top:-2px;
+}
+.B-key{
+  top:-7px;
+}
+
+.C-key{
+ top:-16px;
+}

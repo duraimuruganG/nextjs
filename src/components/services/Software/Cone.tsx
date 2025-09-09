@@ -58,11 +58,11 @@ export default function Cone() {
 
   // Desktop Heights
   const heights = {
-    A: 'h-70',
-    B: 'h-82',
-    C: 'h-100',
-    D: 'h-82',
-    E: 'h-70',
+    A: 'h-[480px]',
+    B: 'h-[540px]',
+    C: 'h-[557px]',
+    D: 'h-[540px]',
+    E: 'h-[480px]',
   };
 
   // Desktop Side Borders
@@ -90,6 +90,14 @@ export default function Cone() {
     C: 'w-[85%]',
     D: 'w-[70%]',
     E: 'w-[50%]',
+  };
+
+  const Position = {
+    A: 'bottom-[65px]',
+    B: 'bottom-[75px]',
+    C: 'bottom-[90px]',
+    D: 'bottom-[75px]',
+    E: 'bottom-[70px]',
   };
 
 
@@ -121,38 +129,38 @@ export default function Cone() {
   return (
     <section >
       {/* DESKTOP & TABLET VIEW */}
-    <div className="text-center py-10 md:py-20 md:mb-10 lg:py-20 lg:mb-10 px-4">
+    <div className="text-center py-10 md:py-20 md:mb-10 lg:py-5 lg:mb-10 px-4">
       <span
-        className="mx-auto w-[90%] md:w-[70%] text-[35px] md:text-[40px] lg:text-[50px] text-[#3A3A3A] font-semibold leading-tight"
+        className="mx-auto w-[90%] md:w-[70%] text-[35px] md:text-[40px] lg:text-[50px] text-[#3A3A3A] font-normal leading-tight"
         style={{ fontFamily: 'var(--font-title)' }}
       >
         Why Choose Us for{' '}
-        <span className="text-[#C32C7B] font-bold">Custom Software Development?</span>
+        <span className="text-[#C32C7B] font-normal">Custom Software Development?</span>
       </span>
 
-      <hr className="mt-3 mb-6 w-[36%] lg:w-[10%] md:w-[20%] mx-auto border-t-2 border-[#C32C7B]" />
+      <hr className="mt-3 mb-6 w-[36%] lg:w-[8%] md:w-[20%] mx-auto border-t-2 border-[#C32C7B]" />
 
 
       <span
-        className="block md:w-[72%] lg:w-[100%] mx-auto text-[20px] md:text-base text-[#3A3A3A] leading-relaxed"
+        className="block md:w-[72%] lg:w-[100%] mx-auto text-[20px] md:text-base color-p leading-relaxed"
         style={{ fontFamily: 'var(--font-paragraph)' }}
       >
         At Fronseye, we specialize in building powerful, scalable, and secure custom software solutions that align with your business objectives. Our team of expert developers, designers, and strategists work closely with you to understand your vision and transform it into a high-performance application.
       </span>
     </div>
 
-    <div className="hidden sm:flex justify-center items-end py-12 lg:px-10 lg:pr-[40px]">
+    <div className="hidden sm:flex items-end justify-center py-10 pc-1440">
         {cardData.map(({ letter, title, desc }) => (
           <div
             key={letter}
-            className={`lg:w-[268px] relative transition-top duration-300 ease-in-out hover:-top-5 w-56 text-white text-center rounded-t-[100px] shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:-top-5 ${heights[letter]}`}
+            className={`lg:w-[267px] relative transition-top duration-300 ease-in-out hover:-top-5 w-56 text-white text-center shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:-top-5 ${heights[letter]} smooth-shape`}
             style={{
               backgroundColor: bgColors[letter],
               ...borderStyles[letter],
             }}
           >
             {/* Letter Circle */}
-            <div className="absolute lg:top-20 md:top-15  left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white rounded-full flex items-center justify-center text-3xl font-bold   shadow-md z-10"
+            <div className="relative lg:top-[140px] md:top-[140px]  left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[155px] !h-[155px] bg-white rounded-full flex items-center justify-center text-[70px] font-[700]   shadow-md z-10"
             
               style={{ 
                 ...borderRound[letter], 
@@ -164,11 +172,12 @@ export default function Cone() {
             </div>
 
             {/* Text Content */}
-            <div className="pt-20 px-4 flex flex-col items-center justify-center h-full leading-normal">
-              <span className="mb-2 font-semibold text-lg md:text-[14px] text-[#fff] leading-normal">{title} <hr className="mt-2 w-[60%] mx-auto bg-white" /></span>
+            <div className={`relative lg:w-[267px] px-4 flex flex-col items-center justify-center h-full leading-normal ${Position[letter]}`}>
+              <span className="mb-2 font-semibold text-lg md:text-[20px] !leading-[27px] text-[#fff] leading-normal tracking-[1px]">{title}  </span>
+              <hr className=" w-[30%] mx-auto h-[1.5px] bg-white mb-[20px] mb-[8px] font-[600] rounded-full" />
            
               
-              <span className="text-sm text-[#fff] md:text-[14px] leading-normal">{desc}</span>
+              <span className="text-[20px] text-[#fff] lg:text-[20px] font-normal leading-normal tracking-[1px]">{desc}</span>
             </div>
           </div>
         ))}
@@ -179,7 +188,7 @@ export default function Cone() {
         {cardData.map(({ letter, title, desc }) => (
           <div
             key={letter}
-            className={`relative transition-top duration-300 ease-in-out hover:-right-5 text-white text-left shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${Mobileheights[letter]} ${Mobilewidth[letter]}`}
+            className={`relative transition-top duration-300 ease-in-out hover:-right-5 text-white text-left shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${Mobileheights[letter]} ${Mobilewidth[letter]} smooth-shape-mobile`}
             style={{
               borderRadius: '0px 100px 100px 0px',
               backgroundColor: bgColors[letter],
@@ -192,8 +201,9 @@ export default function Cone() {
               {/* Text Content */}
 
               <div className={`flex flex-col justify-center ${flexMobilewidth[letter]} `}>
-                <span className="mb-1 font-semibold text-base text-[#fff] text-[13px] leading-normal ">{title} <hr className="w-[30%] mt-1 mx-auto bg-white" /></span>
-                <span className="text-sm font-normal text-[#fff] text-[13px] leading-normal">{desc}</span>
+                <span className="mb-1 font-semibold text-base text-[#fff] text-[13px] leading-normal tracking-[1px]">{title}  </span>
+                <hr className=" w-[60%] mx-auto h-[1.5px] bg-white mb-2 font-[600] rounded-full" />
+                <span className="text-sm font-normal text-[#fff] text-[13px] leading-normal tracking-[1px]">{desc}</span>
               </div>
               
               {/* Letter Circle */}

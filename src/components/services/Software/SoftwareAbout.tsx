@@ -6,11 +6,11 @@ export default function SoftwareAbout() {
     <div className="px-4 sm:px-6 lg:px-8">
         <main className="py-12">
             {/* Heading */}
-            <h1 className="text-3xl sm:text-4xl font-serif font-semibold  text-pink-600 mb-6 text-center">
-              About <span className="text-black">the Service</span>
+            <h1 className="text-[20px] lg:text-[50px] md:text-[40px] font-normal  .color-pink mb-3 text-center sarcolenta">
+              About <span className="text-black sarcolenta">the Service</span>
             </h1>
 
-            <div className="w-34 h-1 bg-[#C32C7B] mx-auto mb-12"></div>
+            <div className="w-50 h-1 bg-[#C32C7B] mx-auto mb-20 rounded-full"></div>
 
             {/* Mobile only (below md) */}
             <div className="block md:hidden flex flex-col items-center justify-center gap-12">

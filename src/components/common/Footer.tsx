@@ -50,8 +50,7 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             <li><a href="/privacy" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Privacy Policy</a></li>
             <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-[var(--color-title)] transition-colors" style={{ fontFamily: 'Futura T OT' }}>Career</a></li>
-          </ul>
+            </ul>
         </div>
 
         {/* Contact Us */}

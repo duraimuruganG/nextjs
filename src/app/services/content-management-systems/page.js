@@ -160,6 +160,15 @@ export default function ContentManagementSystemsPage() {
         <CmsTab />
 
         {/* ---------------- Customers Benefit Section ---------------- */}
+
+        <h2 className="text-[30px] md:text-[50px] !font-[400] !text-[#3A3A3A] mt-[98px] text-center mb-2">
+        Benefits of{" "}
+        <span className="!font-[400] text-[#C32C7B]">Custom Software</span> for
+        Your Industry
+      </h2>
+      <div className="flex justify-center">
+        <div className="h-[2px] w-28 bg-[#C32C7B] rounded-full my-2" />
+      </div>
         
         <BenefitSoftware cards={cards} />
 

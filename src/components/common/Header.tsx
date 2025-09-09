@@ -14,9 +14,9 @@ export default function Header() {
     SERVICES: [
       { label: 'Content Management Systems', icon: 'FileText', href: '/services/content-management-systems' },
       { label: 'Custom Software Development', icon: 'Code2', href: '/services/custom-software-development' },
-      { label: 'E-commerce platform Development', icon: 'ShoppingBag', href: '#' },
-      { label: 'Enterprise Application Development', icon: 'Building2', href: '#' },
-      { label: 'Mobile App development', icon: 'Smartphone', href: 'services/custom-software-development' },
+      { label: 'E-commerce platform Development', icon: 'ShoppingBag', href: '/services/e-commerce-platform-development' },
+      { label: 'Enterprise Application Development', icon: 'Building2', href: '/services/enterprise-application-development' },
+      { label: 'Mobile App development', icon: 'Smartphone', href: '/services/mobile-application' },
       { label: 'Software Testing Services', icon: 'CheckCircle2', href: '#' },
     ],
     SOLUTIONS: [

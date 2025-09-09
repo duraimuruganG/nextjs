@@ -53,8 +53,8 @@ export default function Expertise() {
         } else if (width <= 640 ){
             // Mobile (width < 640)
             if (key === 'A' || key === 'D') {
-            verticalLineHeight = '86px';
-            verticalTop = '-86px';
+            verticalLineHeight = '114px';
+            verticalTop = '-116px';
             }else{
                 verticalLineHeight = '67px';
                 verticalTop = '-68px';
@@ -67,21 +67,32 @@ export default function Expertise() {
     return (
         <section className="py-12">
         
-            <div className="flex items-center justify-center mb-12 gap-4 w-[70%]  md:w-[60%] lg:w-[59%] mx-auto relative">
+            {/* GRID version for tablet/desktop */}
+            <div className="hidden sm:grid sm:grid-cols-3 md:grid-cols-3 items-center justify-self-center !mx-[20px] mb-12 !gap-[14px] md:gap-5 lg:mx-auto relative">
+            <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B] ml-[18px]"></div>
+            <h2 className="lg:text-[70px] text-[35px] md:text-[50px] text-[#C32C7B] font-[400] relative z-10 sarcolenta">
+                Expertise
+            </h2>
+            <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B] mr-[17px]"></div>
+            </div>
 
-                <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B]"></div>
-                <h2 className="lg:text-[70px] text-3xl md:text-[40px] text-pink-500 relative z-10 font-serif">Expertise</h2>
-                <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B]"></div>
+            {/* FLEX version for mobile */}
+            <div className="flex sm:hidden items-center justify-center gap-3 mb-8 !mx-[20px] relative">
+            <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B]"></div>
+            <h2 className="text-[30px] text-[#C32C7B] font-[400] relative z-10 sarcolenta">
+                Expertise
+            </h2>
+            <div className="flex-grow h-0.5 border-t-2 border-dotted border-[#C32C7B]"></div>
             </div>
 
         
-            <div className="relative top-5 flex justify-center lg:gap-36 md:gap-12">
+            <div className="grid relative top-[40px] sm:top-[60px] md:top-[19px] lg:top-[19px] grid-cols-4 md:pb-[125px]  sm:gap-[20px] md:gap-147px] lg:gap-[147px] justify-self-center">
                 {ExpertiseData.map(({ title, key, imgSrc, imgAlt }) => {
         
                 const { verticalLineHeight, verticalTop } = getVerticalStyles(key);
 
                 return (
-                    <div key={key} className="flex flex-col items-center relative z-10">
+                    <div key={key} className="flex flex-col items-center relative z-10 ">
         
                     <span
                         className="absolute left-1/2 -translate-x-1/2 border-l-2 border-dotted border-[#C32C7B]"
@@ -108,7 +119,7 @@ export default function Expertise() {
 
 
                     
-                    <span className="font-semibold text-[18px] text-center  text-sm leading-snug"
+                    <span className="font-semibold text-[18px] lg:text-[25px] md-text[20px] text-center  text-sm leading-snug md:w-[123px] lg:w-[113px]"
                     style={{ fontFamily: 'var(--font-paragraph)' ,
                         color: 'rgba(58, 58, 58)' 
                     }}

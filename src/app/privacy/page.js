@@ -22,6 +22,8 @@ export default function privacy() {
     <>
        <Header />
 
+        <div  className="px-[20px] md:px-[40px] lg:px-[40px] lg:mb-[48px] md:mb-[24px] py-[80px] text-gray-800 space-y-10">
+
        <Hero slides={homeSlides} bgimg={`${IMAGE_BASE_PATH}/Privacy-policy.svg`} style={{
              cursor: "grab",
              backgroundImage: `url(${IMAGE_BASE_PATH}/Privacy-policy.svg)`,

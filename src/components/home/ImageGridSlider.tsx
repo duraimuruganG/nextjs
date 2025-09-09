@@ -13,7 +13,7 @@ export default function ImageGridSlider() {
   return (
     <section className="w-full py-8 bg-white flex flex-col items-center p-0">
       <div
-  className="w-full grid grid-cols-2 md:grid-cols-4 gap-0 max-w-5xl p-0 items-start"
+  className="w-full grid grid-cols-2 md:grid-cols-4 gap-0 px-[50px] p-0 items-start"
         style={{ gridAutoFlow: 'dense' }}
       >
         {images.map((img, i) => (
